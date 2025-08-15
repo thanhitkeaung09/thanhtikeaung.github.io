@@ -11,7 +11,7 @@ RUN apt update && apt install -y apache2 tzdata
 COPY . /var/www/html/
 
 # Expose port 80
-EXPOSE 80
+EXPOSE 8000
 
 # Start Apache in foreground
 CMD ["apachectl", "-D", "FOREGROUND"]
